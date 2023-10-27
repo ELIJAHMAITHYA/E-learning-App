@@ -3,6 +3,7 @@ package com.example.elearningapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,9 +21,11 @@ public class SignUp extends AppCompatActivity {
     private FirebaseAuth auth;
     private EditText signUpEmail, signUpPassword, signupRegistration, signUpName;
     private Button signUpButtom;
+
     private TextView loginRedirecttext;
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +46,6 @@ public class SignUp extends AppCompatActivity {
                 String name = signUpName.getText().toString().trim();
                 String regno = signupRegistration.getText().toString().trim();
                 String password = signUpPassword.getText().toString().trim();
-
                 if (email.isEmpty()) {
                     signUpEmail.setError("Email Cannot be empty");
                 }
