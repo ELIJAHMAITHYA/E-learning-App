@@ -25,6 +25,7 @@
             android:padding="20dp">
 
             <TextView
+                android:id="@+id/signuptext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Sign-Up"
