@@ -145,8 +145,9 @@
                         android:id="@+id/llSubject"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:visibility="gone"
                         android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
                         app:layout_constraintTop_toBottomOf="@id/imageView6"
                         app:layout_constraintStart_toStartOf="@id/imageView6">
                         <TextView
@@ -155,6 +156,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:layout_marginStart="10dp"/>
+
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
